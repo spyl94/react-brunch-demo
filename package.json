@@ -1,0 +1,16 @@
+{
+  "name": "react-babel-demo",
+  "version": "1.0.0",
+  "description": "It's a demo for react with es6 and babel.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "AllenFang",
+  "license": "MIT",
+  "dependencies": {
+    "babel-brunch": "^5.0.0",
+    "brunch": "^1.7.20",
+    "javascript-brunch": "^1.7.1"
+  }
+}

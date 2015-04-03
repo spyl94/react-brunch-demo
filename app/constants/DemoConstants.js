@@ -1,0 +1,4 @@
+export default {
+	DEMO_INCREASE: "INCREASE",
+	DEMO_DECREASE: "DECREASE"
+};
