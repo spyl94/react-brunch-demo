@@ -1,4 +1,3 @@
-import {EventEmitter} from 'events';
 import DemoDispatcher from '../dispatcher/DemoDispatcher'
 import DemoConstants from '../constants/DemoConstants';
 
@@ -13,8 +12,8 @@ function _decrease(){
 	count--;
 }
 
-class DemoStore extends EventEmitter{
-	
+class DemoStore extends EventEmitter {
+
 	getCount(){
 		return count;
 	}

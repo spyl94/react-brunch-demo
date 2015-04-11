@@ -1,4 +1,3 @@
-import React from 'react';
 import Header from './Header.react';
 import Content from './Content.react';
 import demoStore from '../stores/DemoStore';

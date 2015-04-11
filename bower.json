@@ -1,7 +1,7 @@
 {
   "name": "react-babel-demo",
-  "version": "0.0.0",
-  "homepage": "https://github.com/AllenFang/react-babel-demo",
+  "version": "1.0.0",
+  "homepage": "https://github.com/spyl94/react-brunch-demo",
   "authors": [
     "Aurélien David <adavid@jolicode.com>"
   ],
@@ -15,6 +15,8 @@
   ],
   "dependencies": {
     "flux": "~2.0.2",
-    "react": "~0.13.1"
+    "react": "~0.13.1",
+    "fetch": "~0.7.0",
+    "eventEmitter": "~4.2.11"
   }
 }

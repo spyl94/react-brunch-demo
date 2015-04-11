@@ -1,4 +1,3 @@
-import React from 'react';
 import DemoAction from '../actions/DemoAction';
 
 export default React.createClass({
