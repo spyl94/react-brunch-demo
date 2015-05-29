@@ -9,7 +9,8 @@
   "license": "MIT",
   "dependencies": {
     "babel-brunch": "^5.0.0",
-    "brunch": "^1.7.20",
+    "brunch": "^1.8.3",
+    "css-brunch": "^1.7.0",
     "javascript-brunch": "^1.7.1"
   }
 }
