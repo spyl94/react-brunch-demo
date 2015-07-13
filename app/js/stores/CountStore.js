@@ -1,5 +1,5 @@
-import BaseStore from './BaseStore'
-import {COUNT_INCREASE, COUNT_DECREASE} from '../constants/CountConstants'
+import BaseStore from './BaseStore';
+import {COUNT_INCREASE, COUNT_DECREASE} from '../constants/CountConstants';
 
 class CountStore extends BaseStore {
 
@@ -10,18 +10,18 @@ class CountStore extends BaseStore {
   }
 
   _registerToActions(action) {
-    switch(action.actionType) {
+    switch (action.actionType) {
       case COUNT_INCREASE:
         this._count++;
         this.emitChange();
         break;
       case COUNT_DECREASE:
-      	this._count--;
+        this._count--;
         this.emitChange();
         break;
       default:
         break;
-    };
+    }
   }
 
   get count() {

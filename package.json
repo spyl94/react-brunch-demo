@@ -8,8 +8,8 @@
   "dependencies": {
     "babel-brunch": "^5.0.0",
     "brunch": "^1.8.3",
-    "javascript-brunch": "^1.7.1",
-    "stylus-brunch": "^1.8.1"
+    "stylus-brunch": "^1.8.1",
+    "eslint-brunch": "^1.0.0"
   },
   "devDependencies": {
     "fb-flo-brunch": "^1.7.22"

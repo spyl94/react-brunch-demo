@@ -2,22 +2,25 @@ import CountAction from '../actions/CountAction';
 
 export default class Header extends React.Component {
 
-	handleIncrease() {
-		CountAction.increase();
-	}
+  render() {
+    return (
+      <section>
+        <button onClick={this.handleIncrease}>
+          Increase
+        </button>
+        <button onClick={this.handleDecrease}>
+          Decrease
+        </button>
+      </section>
+    );
+  }
 
-	handleDecrease() {
-		CountAction.decrease();
-	}
+  handleIncrease() {
+    CountAction.increase();
+  }
 
-	render() {
-		return(
-			<div>
-				<section>
-					<button onClick={this.handleIncrease}>Increase</button>
-					<button onClick={this.handleDecrease}>Decrease</button>
-				</section>
-			</div>
-		)
-	}
+  handleDecrease() {
+    CountAction.decrease();
+  }
+
 }
