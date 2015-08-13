@@ -6,7 +6,7 @@
   "globals": {
     "React": true,
     "Flux": true,
-    "EventEmitter",
+    "EventEmitter": true",
     "document": true
   },
   "env": {                           // http://eslint.org/docs/user-guide/configuring.html#specifying-environments
