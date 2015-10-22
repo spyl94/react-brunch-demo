@@ -4,6 +4,11 @@ import CountStore from '../stores/CountStore';
 
 export default class App extends React.Component {
 
+  constructor() {
+    super();
+    this.state = this.getCountState();
+  }
+
   componentDidMount() {
     this.changeListener = this._onChange.bind(this);
     CountStore.addChangeListener(this.changeListener);
@@ -19,6 +24,10 @@ export default class App extends React.Component {
     };
   }
 
+  _onChange() {
+    this.setState(this.getCountState());
+  }
+
   render() {
     return (
       <div>
@@ -28,12 +37,4 @@ export default class App extends React.Component {
     );
   }
 
-  constructor() {
-    super();
-    this.state = this.getCountState();
-  }
-
-  _onChange() {
-    this.setState(this.getCountState());
-  }
 }
