@@ -11,16 +11,16 @@ class CountStore extends BaseStore {
 
   _registerToActions(action) {
     switch (action.actionType) {
-      case COUNT_INCREASE:
-        this._count++;
-        this.emitChange();
-        break;
-      case COUNT_DECREASE:
-        this._count--;
-        this.emitChange();
-        break;
-      default:
-        break;
+    case COUNT_INCREASE:
+      this._count++;
+      this.emitChange();
+      break;
+    case COUNT_DECREASE:
+      this._count--;
+      this.emitChange();
+      break;
+    default:
+      break;
     }
   }
 

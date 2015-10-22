@@ -2,6 +2,14 @@ import CountAction from '../actions/CountAction';
 
 export default class Header extends React.Component {
 
+  handleIncrease() {
+    CountAction.increase();
+  }
+
+  handleDecrease() {
+    CountAction.decrease();
+  }
+
   render() {
     return (
       <section>
@@ -13,14 +21,6 @@ export default class Header extends React.Component {
         </button>
       </section>
     );
-  }
-
-  handleIncrease() {
-    CountAction.increase();
-  }
-
-  handleDecrease() {
-    CountAction.decrease();
   }
 
 }
