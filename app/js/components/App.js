@@ -1,3 +1,4 @@
+import React from 'react';
 import Header from './Header';
 import Content from './Content';
 import CountStore from '../stores/CountStore';

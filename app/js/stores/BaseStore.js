@@ -1,3 +1,4 @@
+import EventEmitter from 'events';
 import AppDispatcher from '../dispatcher/AppDispatcher';
 
 export default class BaseStore extends EventEmitter {

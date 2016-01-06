@@ -1,18 +1,24 @@
 {
   "name": "react-brunch-demo",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "It's a demo for react with es6 and brunch.",
-  "scripts": {},
+  "scripts": {
+    "build": "./node_modules/brunch/bin/brunch build"
+  },
   "author": "Spyl <adavid@jolicode.com>",
   "license": "MIT",
   "dependencies": {
     "babel-brunch": "^5.1.2",
     "babel-eslint": "^4.1.3",
-    "brunch": "^1.8.5",
-    "eslint-config-airbnb": "^0.1.0",
+    "brunch": "^2.1.1",
     "eslint-brunch": "^1.8.3",
-    "stylus-brunch": "^1.8.1",
-    "eslint-plugin-react": "^3.6.3"
+    "eslint-config-airbnb": "^0.1.0",
+    "eslint-plugin-react": "^3.6.3",
+    "events": "^1.1.0",
+    "flux": "^2.1.1",
+    "react": "^0.14.5",
+    "react-dom": "^0.14.5",
+    "stylus-brunch": "^1.8.1"
   },
   "devDependencies": {
     "fb-flo-brunch": "^1.7.22"

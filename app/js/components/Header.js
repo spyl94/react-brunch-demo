@@ -1,3 +1,4 @@
+import React from 'react';
 import CountAction from '../actions/CountAction';
 
 export default class Header extends React.Component {
