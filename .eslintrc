@@ -1,9 +1,3 @@
 {
-  "extends": "airbnb",
-  "globals": {
-    "React": true,
-    "Flux": true,
-    "EventEmitter": true",
-    "document": true
-  }
+  "extends": "jolicode"
 }

@@ -1,4 +1,11 @@
 exports.config = {
+  overrides: {
+    production: {
+      plugins: {
+        off: ['eslint-brunch'],
+      }
+    }
+  },
   npm: {
     enabled: true,
     whitelist: ['react', 'react-dom', 'flux', 'events'],
