@@ -8,7 +8,6 @@ exports.config = {
   },
   npm: {
     enabled: true,
-    whitelist: ['react', 'react-dom', 'react-bootstrap', 'flux', 'events'],
   },
   files: {
     javascripts: {
