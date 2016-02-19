@@ -7,6 +7,20 @@
   </head>
   <body>
     <div id="example"></div>
+
+    <!-- sould be dynamic using a server -->
+    <script>
+      window.App = {
+        locale: 'en-US',
+        messages: {
+          increase: 'Increase (++)',
+          decrease: 'Decrease (--)',
+          value: 'Current value: {count} !',
+        }
+      };
+    </script>
+    <!-- / -->
+
     <script src="js/vendor.js"></script>
     <script src="js/app.js"></script>
   </body>

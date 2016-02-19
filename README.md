@@ -14,3 +14,7 @@ This is a demo for an HTML5 application, powered by [React](http://facebook.gith
     * `public/` dir is fully auto-generated. Write your code in `app/` dir.
     * Place static files you want to be copied from `app/assets/` to `public/`. Ideal for images, fonts...
     * [Brunch site](http://brunch.io), [Getting started guide](https://github.com/brunch/brunch-guide#readme)
+
+## Intl
+
+Extract Messages: `babel --plugins react-intl app/js/*`

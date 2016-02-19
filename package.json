@@ -21,10 +21,12 @@
     "react": "^0.14.7",
     "react-bootstrap": "^0.28.3",
     "react-dom": "^0.14.7",
+    "react-intl": "^2.0.0-beta-2",
     "stylus-brunch": "^2.0.0"
   },
   "devDependencies": {
     "babel-eslint": "^5.0.0",
+    "babel-plugin-react-intl": "^2.1.1",
     "eslint": "^2.1.0",
     "eslint-config-airbnb": "^5.0.1",
     "eslint-config-jolicode": "^0.2.0",
