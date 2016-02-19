@@ -6,8 +6,11 @@ exports.config = {
       }
     }
   },
-  npm: {
-    enabled: true,
+  conventions: {
+    ignored: [
+      /[\\/]_/,
+      /\-test.js$/,
+    ],
   },
   files: {
     javascripts: {
@@ -19,6 +22,11 @@ exports.config = {
     stylesheets: {
       joinTo: 'styles/app.css'
     }
+  },
+  plugins: {
+    babel: {
+      presets: [ 'es2015', 'react', 'stage-0'],
+    },
   },
   onCompile: function() {
     require('fs').appendFile('public/js/app.js', '\n\nrequire(\'js/app\');');

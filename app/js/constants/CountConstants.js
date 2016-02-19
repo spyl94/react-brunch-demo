@@ -1,4 +1,2 @@
-export default {
-  COUNT_INCREASE: 'INCREASE',
-  COUNT_DECREASE: 'DECREASE',
-};
+export const COUNT_INCREASE = 'COUNT_INCREASE';
+export const COUNT_DECREASE = 'COUNT_DECREASE';
