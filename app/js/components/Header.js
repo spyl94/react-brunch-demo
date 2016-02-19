@@ -1,5 +1,6 @@
 import React from 'react';
 import CountAction from '../actions/CountAction';
+import {Button} from 'react-bootstrap';
 
 export default class Header extends React.Component {
 
@@ -14,12 +15,12 @@ export default class Header extends React.Component {
   render() {
     return (
       <section>
-        <button onClick={this.handleIncrease}>
+        <Button onClick={this.handleIncrease}>
           Increase
-        </button>
-        <button onClick={this.handleDecrease}>
+        </Button>
+        <Button onClick={this.handleDecrease}>
           Decrease
-        </button>
+        </Button>
       </section>
     );
   }

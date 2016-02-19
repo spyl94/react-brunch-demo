@@ -1,5 +1,5 @@
 import AppDispatcher from '../dispatcher/AppDispatcher';
-import CountConstants from '../constants/CountConstants';
+import * as CountConstants from '../constants/CountConstants';
 
 const DemoAction = {
 

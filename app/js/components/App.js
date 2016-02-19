@@ -7,33 +7,31 @@ export default class App extends React.Component {
 
   constructor() {
     super();
-    this.state = this.getCountState();
+    this.state = {
+      count: CountStore.count,
+    };
+    this.onChange = ::this.onChange;
   }
 
   componentDidMount() {
-    this.changeListener = this._onChange.bind(this);
-    CountStore.addChangeListener(this.changeListener);
+    CountStore.addChangeListener(this.onChange);
   }
 
   componentWillUnmount() {
-    CountStore.removeChangeListener(this.changeListener);
+    CountStore.removeChangeListener(this.onChange);
   }
 
-  getCountState() {
-    return {
+  onChange() {
+    this.setState({
       count: CountStore.count,
-    };
-  }
-
-  _onChange() {
-    this.setState(this.getCountState());
+    });
   }
 
   render() {
     return (
       <div>
         <Header />
-        <Content count={this.state.count}/>
+        <Content count={this.state.count} />
       </div>
     );
   }
