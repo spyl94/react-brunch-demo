@@ -25,7 +25,7 @@ exports.config = {
   },
   plugins: {
     babel: {
-      presets: [ 'es2015', 'react', 'stage-0'],
+      babelrc: true,
     },
   },
   onCompile: function() {

@@ -15,7 +15,7 @@
     "babel-preset-react": "^6.5.0",
     "babel-preset-stage-0": "^6.5.0",
     "bootstrap-stylus": "^0.2.2",
-    "brunch": "^2.3.2",
+    "brunch": "^2.4.2",
     "events": "^1.1.0",
     "flux": "^2.1.1",
     "react": "^0.14.7",
