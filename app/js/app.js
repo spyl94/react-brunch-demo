@@ -1,9 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './components/App';
-import { IntlProvider } from 'react-intl';
+import { IntlProvider, addLocaleData } from 'react-intl';
+import enLocaleData from 'react-intl/locale-data/en';
 
-const {locale, messages} = window.App;
+addLocaleData(enLocaleData);
+const { locale, messages } = window.App;
 
 ReactDOM.render(
   <IntlProvider locale={locale} messages={messages}>
@@ -11,4 +13,3 @@ ReactDOM.render(
   </IntlProvider>
   , document.getElementById('example')
 );
-
