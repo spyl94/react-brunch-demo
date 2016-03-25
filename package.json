@@ -15,22 +15,22 @@
     "babel-preset-react": "^6.5.0",
     "babel-preset-stage-0": "^6.5.0",
     "bootstrap-stylus": "^0.2.2",
-    "brunch": "^2.4.2",
+    "brunch": "github:brunch/brunch",
     "events": "^1.1.0",
     "flux": "^2.1.1",
     "react": "^0.14.7",
-    "react-bootstrap": "^0.28.3",
+    "react-bootstrap": "^0.28.4",
     "react-dom": "^0.14.7",
-    "react-intl": "^2.0.0-beta-2",
+    "react-intl": "^2.0.0-rc-1",
     "stylus-brunch": "^2.0.0"
   },
   "devDependencies": {
     "babel-eslint": "^5.0.0",
     "babel-plugin-react-intl": "^2.1.1",
-    "eslint": "^2.1.0",
-    "eslint-config-airbnb": "^5.0.1",
+    "eslint": "^2.4.0",
+    "eslint-config-airbnb": "^6.2.0",
     "eslint-config-jolicode": "^0.2.0",
-    "eslint-plugin-react": "^3.16.1",
+    "eslint-plugin-react": "^4.2.3",
     "fb-flo-brunch": "^1.7.22"
   }
 }
