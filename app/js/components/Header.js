@@ -1,6 +1,6 @@
 import React from 'react';
 import CountAction from '../actions/CountAction';
-import {Button} from 'react-bootstrap';
+import { Button } from 'react-bootstrap';
 import { FormattedMessage } from 'react-intl';
 
 export default class Header extends React.Component {

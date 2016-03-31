@@ -3,8 +3,8 @@ exports.config = {
     production: {
       plugins: {
         off: ['eslint-brunch'],
-      }
-    }
+      },
+    },
   },
   conventions: {
     ignored: [
@@ -16,19 +16,21 @@ exports.config = {
     javascripts: {
       joinTo: {
         'js/vendor.js': /^node_modules/,
-        'js/app.js': /^app/
-      }
+        'js/app.js': /^app/,
+      },
     },
     stylesheets: {
-      joinTo: 'styles/app.css'
-    }
+      joinTo: 'styles/app.css',
+    },
   },
   plugins: {
     babel: {
       babelrc: true,
     },
   },
-  onCompile: function() {
-    require('fs').appendFile('public/js/app.js', '\n\nrequire(\'js/app\');');
-  }
+  modules: {
+    autoRequire: {
+      'js/app.js': ['js/app'],
+    },
+  },
 };
