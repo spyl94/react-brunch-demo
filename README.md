@@ -1,6 +1,6 @@
 # react-brunch-demo
 
-This is a demo for an HTML5 application, powered by [React](http://facebook.github.io/react/) & [Flux](http://facebook.github.io/flux/), written in ES6 and built with [Brunch](http://brunch.io).
+This is a demo for an HTML5 application, powered by [React](http://facebook.github.io/react/) & [Redux](http://redux.js.org/), written in ES6 and built with [Brunch](http://brunch.io).
 
 ## Getting started
 * Install (if you don't have them):
@@ -17,4 +17,4 @@ This is a demo for an HTML5 application, powered by [React](http://facebook.gith
 
 ## Intl
 
-Extract Messages: `babel --plugins react-intl app/js/*`
+Messages are extracted in `./intl/messages`.

@@ -1,35 +1,29 @@
-import React from 'react';
-import CountAction from '../actions/CountAction';
+import React, { PropTypes } from 'react';
+import { connect } from 'react-redux';
 import { Button } from 'react-bootstrap';
 import { FormattedMessage } from 'react-intl';
+import * as actions from '../redux/counter';
 
-export default class Header extends React.Component {
+const Header = ({ increment, decrement }) =>
+  <section>
+    <Button onClick={() => increment()}>
+      <FormattedMessage
+        id="increase"
+        defaultMessage="Increase"
+      />
+    </Button>
+    <Button onClick={() => decrement()}>
+      <FormattedMessage
+        id="decrease"
+        defaultMessage="Decrease"
+      />
+    </Button>
+  </section>
+;
 
-  handleIncrease() {
-    CountAction.increase();
-  }
+Header.propTypes = {
+  increment: PropTypes.func,
+  decrement: PropTypes.func,
+};
 
-  handleDecrease() {
-    CountAction.decrease();
-  }
-
-  render() {
-    return (
-      <section>
-        <Button onClick={this.handleIncrease}>
-          <FormattedMessage
-            id="increase"
-            defaultMessage="Increase"
-          />
-        </Button>
-        <Button onClick={this.handleDecrease}>
-          <FormattedMessage
-            id="decrease"
-            defaultMessage="Decrease"
-          />
-        </Button>
-      </section>
-    );
-  }
-
-}
+export default connect(null, actions)(Header);

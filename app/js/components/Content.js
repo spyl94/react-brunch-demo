@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { PropTypes } from 'react';
+import { connect } from 'react-redux';
 import { FormattedMessage } from 'react-intl';
 
 const Content = ({ count }) =>
@@ -10,7 +11,8 @@ const Content = ({ count }) =>
 ;
 
 Content.propTypes = {
-  count: React.PropTypes.number,
+  count: PropTypes.number,
 };
 
-export default Content;
+const mapStateToProps = count => ({ count });
+export default connect(mapStateToProps)(Content);
