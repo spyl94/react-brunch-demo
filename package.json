@@ -11,8 +11,8 @@
   "license": "MIT",
   "dependencies": {
     "babel-brunch": "^6.0.6",
-    "babel-preset-es2015": "^6.16.0",
-    "babel-preset-es2017": "^6.16.0",
+    "babel-preset-flow": "^1.0.0",
+    "babel-preset-latest": "^6.22.0",
     "babel-preset-react": "^6.16.0",
     "babel-preset-stage-0": "^6.16.0",
     "bootstrap-styl": "^5.0.8",
@@ -33,7 +33,8 @@
     "eslint-plugin-import": "^1.16.0",
     "eslint-plugin-jsx-a11y": "^2.2.3",
     "eslint-plugin-react": "^6.4.1",
-    "fb-flo-brunch": "^1.7.22"
+    "fb-flo-brunch": "^1.7.22",
+    "flow-bin": "^0.38.0"
   },
   "eslintConfig": {
     "extends": "airbnb",

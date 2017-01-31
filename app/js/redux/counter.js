@@ -1,14 +1,17 @@
-const INCREMENT = 'INCREMENT';
-const DECRETEMENT = 'DECRETEMENT';
+// @flow
+type State = number;
+type IncrementAction = { type: 'INCREMENT' };
+type DecrementAction = { type: 'DECRETEMENT' };
+type Action = IncrementAction | DecrementAction;
 
-export const increment = () => ({ type: INCREMENT });
-export const decrement = () => ({ type: DECRETEMENT });
+export const increment = (): IncrementAction => ({ type: 'INCREMENT' });
+export const decrement = (): DecrementAction => ({ type: 'DECRETEMENT' });
 
-const reducer = (state = 0, action) => {
+const reducer = (state: State = 0, action: Action): State => {
   switch (action.type) {
-    case INCREMENT:
+    case 'INCREMENT':
       return state + 1;
-    case DECRETEMENT:
+    case 'DECRETEMENT':
       return state - 1;
     default:
       return state;

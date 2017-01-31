@@ -1,5 +1,5 @@
 {
-  "presets": [ "es2015", "es2017", "react", "stage-0" ],
+  "presets": [ "react", "flow", "latest", "stage-0" ],
   "plugins": [
     ["react-intl", {
         "messagesDir": "./intl/messages/",

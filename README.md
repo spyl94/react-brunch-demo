@@ -1,12 +1,13 @@
 # react-brunch-demo
 
-This is a demo for an HTML5 application, powered by [React](http://facebook.github.io/react/) & [Redux](http://redux.js.org/), written in ES6 and built with [Brunch](http://brunch.io).
+This is a demo for a frontend application, powered by [React](http://facebook.github.io/react) & [Redux](http://redux.js.org), written in ES6, typed with [Flow](https://flowtype.org), tested with [Jest](http://facebook.github.io/jest) and built with [Brunch](http://brunch.io).
 
 ## Getting started
 * Install (if you don't have them):
     * [Node.js](http://nodejs.org): `brew install node` on OS X
-    * [Brunch](http://brunch.io): `npm install -g brunch`
-    * Brunch plugins and dependencies: `npm install`.
+    * [Yarn](https://yarnpkg.com): `brew install yarn` on OS X
+    * [Brunch](http://brunch.io): `yarn global add brunch --prefix /usr/local`
+    * Brunch plugins and dependencies: `yarn install`.
 * Run:
     * `brunch watch --server` — watches the project with continuous rebuild. This will also launch HTTP server with pushState.
     * `brunch build --production` — builds minified project for production

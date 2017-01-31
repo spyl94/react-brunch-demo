@@ -2,3 +2,4 @@ intl
 node_modules
 public
 *~
+.eslintignore
