@@ -7,7 +7,7 @@
     "build:prod": "NODE_ENV=production brunch build --production",
     "dev": "NODE_ENV=development brunch watch --server"
   },
-  "author": "Spyl <adavid@jolicode.com>",
+  "author": "Spyl <contact@spyl.net>",
   "license": "MIT",
   "dependencies": {
     "babel-brunch": "^6.0.6",
