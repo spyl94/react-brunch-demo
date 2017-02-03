@@ -1,4 +1,3 @@
-// @flow
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { IntlProvider, addLocaleData } from 'react-intl';
@@ -6,15 +5,13 @@ import { Provider } from 'react-redux';
 import { createStore } from 'redux';
 import enLocaleData from 'react-intl/locale-data/en';
 import App from './components/App';
-import reducer from './redux/counter';
+import configureStore from './store';
 
 addLocaleData(enLocaleData);
 const { locale, messages } = window.App;
 
-const store = createStore(reducer);
-
 ReactDOM.render(
-  <Provider store={store}>
+  <Provider store={configureStore()}>
     <IntlProvider locale={locale} messages={messages}>
       <App />
     </IntlProvider>

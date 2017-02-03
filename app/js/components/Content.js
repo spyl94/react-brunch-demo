@@ -1,9 +1,9 @@
-// @flow
-import React, { PropTypes } from 'react';
+import React from 'react';
 import { connect } from 'react-redux';
 import { FormattedMessage } from 'react-intl';
+import type { State } from '../store';
 
-const Content = ({ count }) =>
+const Content = ({ count }: { count: number }) =>
   <FormattedMessage
     id="value"
     defaultMessage="Current value: {count}"
@@ -11,9 +11,5 @@ const Content = ({ count }) =>
   />
 ;
 
-Content.propTypes = {
-  count: PropTypes.number,
-};
-
-const mapStateToProps = count => ({ count });
+const mapStateToProps = (state: State) => ({ count: state.counter });
 export default connect(mapStateToProps)(Content);

@@ -1,5 +1,4 @@
-// @flow
-import React, { PropTypes } from 'react';
+import React from 'react';
 import { connect } from 'react-redux';
 import { Button } from 'react-bootstrap';
 import { FormattedMessage } from 'react-intl';

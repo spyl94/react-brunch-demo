@@ -1,5 +1,9 @@
 [ignore]
 .*/node_modules/*
+.*/public/*
 
 [libs]
 flow-typed
+
+[options]
+all=true
