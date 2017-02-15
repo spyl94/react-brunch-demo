@@ -1,9 +1,10 @@
 import React from 'react';
-import { connect } from 'react-redux';
+import { connect, type Connector } from 'react-redux';
 import { FormattedMessage } from 'react-intl';
 import type { State } from '../store';
 
-const Content = ({ count }: { count: number }) =>
+type Props = { count: number };
+const Content = ({ count }: Props) =>
   <FormattedMessage
     id="value"
     defaultMessage="Current value: {count}"
@@ -12,4 +13,5 @@ const Content = ({ count }: { count: number }) =>
 ;
 
 const mapStateToProps = (state: State) => ({ count: state.counter });
-export default connect(mapStateToProps)(Content);
+const connector: Connector<{}, Props> = connect(mapStateToProps);
+export default connector(Content);

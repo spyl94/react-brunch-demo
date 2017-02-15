@@ -1,10 +1,11 @@
 import React from 'react';
-import { connect } from 'react-redux';
+import { connect, type Connector } from 'react-redux';
 import { Button } from 'react-bootstrap';
 import { FormattedMessage } from 'react-intl';
 import * as actions from '../redux/counter';
 
-const Header = ({ increment, decrement }: { increment: Function, decrement: Function }) =>
+type Props = { increment: Function, decrement: Function };
+const Header = ({ increment, decrement }: Props) =>
   <section>
     <Button
       onClick={() => increment()}
@@ -27,4 +28,5 @@ const Header = ({ increment, decrement }: { increment: Function, decrement: Func
   </section>
 ;
 
-export default connect(null, actions)(Header);
+const connector: Connector<{}, Props> = connect(null, actions);
+export default connector(Header);

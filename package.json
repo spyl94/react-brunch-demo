@@ -13,13 +13,13 @@
   "author": "Spyl <contact@spyl.net>",
   "license": "MIT",
   "dependencies": {
-    "babel-brunch": "^6.0.6",
-    "babel-preset-flow": "^1.0.0",
+    "babel-brunch": "^6.1.1",
+    "babel-preset-flow": "^6.23.0",
     "babel-preset-latest": "^6.22.0",
-    "babel-preset-react": "^6.16.0",
+    "babel-preset-react": "^6.23.0",
     "babel-preset-stage-0": "^6.16.0",
     "bootstrap-styl": "^5.0.8",
-    "brunch": "^2.8.2",
+    "brunch": "^2.10.8",
     "react": "^15.3.2",
     "react-bootstrap": "^0.30.5",
     "react-dom": "^15.3.2",
@@ -27,18 +27,18 @@
     "react-redux": "^5.0.2",
     "redux": "^3.6.0",
     "redux-saga": "^0.14.3",
-    "stylus-brunch": "^2.7.2"
+    "stylus-brunch": "^2.10.0"
   },
   "devDependencies": {
     "babel-plugin-react-intl": "^2.2.0",
-    "eslint": "^3.8.1",
-    "eslint-brunch": "^3.11.1",
-    "eslint-config-airbnb": "^14.0.0",
+    "eslint": "^3.15.0",
+    "eslint-brunch": "^3.12.0",
+    "eslint-config-airbnb": "^14.1.0",
     "eslint-plugin-import": "^2.2.0",
-    "eslint-plugin-jsx-a11y": "^3.0.2",
+    "eslint-plugin-jsx-a11y": "^4.0.0",
     "eslint-plugin-react": "^6.4.1",
     "fb-flo-brunch": "^1.7.22",
-    "flow-bin": "^0.38.0",
+    "flow-bin": "^0.39.0",
     "jest": "^18.1.0"
   },
   "eslintConfig": {

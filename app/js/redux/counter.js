@@ -1,7 +1,8 @@
+import type { Action } from '../store';
 export type State = number;
 type IncrementAction = {| type: 'INCREMENT' |};
 type DecrementAction = {| type: 'DECRETEMENT' |};
-type Action = IncrementAction | DecrementAction;
+export type CounterAction = IncrementAction | DecrementAction;
 
 export const increment = (): IncrementAction => ({ type: 'INCREMENT' });
 export const decrement = (): DecrementAction => ({ type: 'DECRETEMENT' });
