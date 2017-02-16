@@ -2,9 +2,13 @@ import React from 'react';
 import { connect, type Connector } from 'react-redux';
 import { Button } from 'react-bootstrap';
 import { FormattedMessage } from 'react-intl';
-import * as actions from '../redux/counter';
+import { incrementAction, decrementAction } from '../redux/counter';
+import type { Dispatch } from '../types';
 
-type Props = { increment: Function, decrement: Function };
+type Props = {| // Always use exact type for props
+  increment: () => void,
+  decrement: () => void,
+|};
 const Header = ({ increment, decrement }: Props) =>
   <section>
     <Button
@@ -28,5 +32,12 @@ const Header = ({ increment, decrement }: Props) =>
   </section>
 ;
 
-const connector: Connector<{}, Props> = connect(null, actions);
+const mapDispatchToProps = (dispatch: Dispatch) => ({
+  increment: () => { dispatch(incrementAction())}, // trying to dispatch { type: 'UNKNOWN_ACTION' }
+  decrement: () => { dispatch(decrementAction())}, // will throw an incompatible error
+});
+const connector: Connector<{}, Props> = connect(
+  null,
+  mapDispatchToProps
+);
 export default connector(Header);

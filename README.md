@@ -16,6 +16,11 @@ This is a demo for a frontend application, powered by [React](http://facebook.gi
     * Place static files you want to be copied from `app/assets/` to `public/`. Ideal for images, fonts...
     * [Brunch site](http://brunch.io), [Getting started guide](https://github.com/brunch/brunch-guide#readme)
 
+## Flow
+
+Flow is enabled on all files.
+`yarn run typecheck`
+
 ## Intl
 
 Messages are extracted in `./intl/messages`.

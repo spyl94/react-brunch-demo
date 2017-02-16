@@ -5,6 +5,7 @@
   "scripts": {
     "test": "jest",
     "test:watch": "jest --watchAll",
+    "typecheck": "flow check",
     "build": "brunch build",
     "lint": "eslint --cache src",
     "build:prod": "NODE_ENV=production brunch build --production",

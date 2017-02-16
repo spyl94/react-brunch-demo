@@ -8,7 +8,7 @@ import App from './components/App';
 import configureStore from './store';
 
 addLocaleData(enLocaleData);
-const { locale, messages } = window.App;
+const { locale, messages }: { locale: string, messages: Object } = window.App;
 
 ReactDOM.render(
   <Provider store={configureStore()}>

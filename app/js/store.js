@@ -1,16 +1,9 @@
 import { compose, createStore, applyMiddleware, combineReducers } from 'redux';
 import createSagaMiddleware from 'redux-saga';
 import { reducer as counterReducer } from './redux/counter';
-import type { State as counterState, CounterAction } from './redux/counter';
-import type { Store as ReduxStore, Dispatch as ReduxDispatch } from 'redux';
+import type { Store } from './types'
 
-export type State = {
-  counter: counterState,
-};
-export type Action = CounterAction;
-export type Dispatch = ReduxDispatch<Action>;
-
-export default (): ReduxStore<State, Action> => {
+export default (): Store => {
   const reducers = {
     counter: counterReducer,
   };
